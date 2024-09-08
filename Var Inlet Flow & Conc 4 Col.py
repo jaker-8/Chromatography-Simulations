@@ -1,18 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 27 11:09:54 2023
-@author: IG
-Here we simulate a multi-adsorber system
 
-
-
-Mon May 13 2024 Updates:
-1) Remove functions defined in loop by adding new parameter for concentration
-2) Fix waste calculation to use sim_results data and not adsorber[i].C_bulk[j]
-    -> j is the adsorber plate and not a time index, whereas sim_results contains the exiting bulk concentration for all adsorbers
-3) Remove re-creating adsorber objects and use the reset function to reset them in between runs
-
-"""
 #%% import packages
 
 from scipy.integrate import odeint
